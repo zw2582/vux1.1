@@ -5,13 +5,14 @@ import HelloFrom from '@/components/HelloFromVux'
 import ViewBox from '@/components/ViewBox'
 import FormComfirm from '@/components/FormComfirm'
 import Panel from '@/components/Panel'
+import Index from '@/components/Index'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-    	path: '/',
+    	path: '/hello',
     	name: 'HelloFrom',
     	component: HelloFrom
     },
@@ -27,6 +28,10 @@ export default new Router({
     {
     	path: '/panel',
     	component: Panel
+    },
+    {
+    	path: '/',
+    	component: Index
     }
   ]
 })
