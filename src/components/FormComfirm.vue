@@ -11,8 +11,9 @@
 
 <script>
 	import {XHeader,Group,Cell,CellFormPreview} from 'vux'
+	import Footer from '@/components/Footer'
 	export default {
-		components:{XHeader,Group,Cell,CellFormPreview},
+		components:{XHeader,Group,Cell,CellFormPreview,Footer},
 		data(){
 			return {
 				good_list:[{

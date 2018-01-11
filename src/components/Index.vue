@@ -26,13 +26,12 @@
 					</div>
 				</flexbox-item>
 		</flexbox>
-		<Footer></Footer>
+		<div style="height:50px"></div>
 	</div>
 </template>
 
 <script>
-import {Swiper,Grid,GridItem,Group,Cell,Search,Panel,Flexbox,FlexboxItem,Tabbar,TabbarItem} from 'vux'
-import Footer from '@/components/Footer'
+import {Swiper,Grid,GridItem,Group,Cell,Search,Panel,Flexbox,FlexboxItem} from 'vux'
 
 import banner from '@/assets/banner.jpg'
 import banner1 from '@/assets/banner1.jpg'
@@ -47,7 +46,7 @@ import p3 from '@/assets/p3.png'
 
 
 export default{
-	components:{Swiper,Grid,GridItem,Group,Cell,Search,Panel,Flexbox,FlexboxItem,Tabbar,TabbarItem,Footer},
+	components:{Swiper,Grid,GridItem,Group,Cell,Search,Panel,Flexbox,FlexboxItem},
 	data(){
 		return {
 			list:[{

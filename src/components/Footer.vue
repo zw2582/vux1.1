@@ -1,12 +1,11 @@
 <template>
 	<div>
-		<div style="height:50px"></div>
 		<tabbar class="my-tabbar">
-			<tabbar-item>
+			<tabbar-item link="/">
 				<img slot="icon" src="../assets/nav.png" />
 				<span slot="label">点餐</span>
 			</tabbar-item>
-			<tabbar-item>
+			<tabbar-item link="/form-confirm">
 				<img slot="icon" src="../assets/nav2.png" />
 				<span slot="label">客说</span>
 			</tabbar-item>

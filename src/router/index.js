@@ -6,6 +6,7 @@ import ViewBox from '@/components/ViewBox'
 import FormComfirm from '@/components/FormComfirm'
 import Panel from '@/components/Panel'
 import Index from '@/components/Index'
+import Main from '@/components/Main'
 
 Vue.use(Router)
 
@@ -17,21 +18,27 @@ export default new Router({
     	component: HelloFrom
     },
     {
-    	path: '/view-box',
-    	name: 'ViewBox',
-    	component: ViewBox
-    },
-    {
-    	path: '/form-confirm',
-    	component: FormComfirm
-    },
-    {
-    	path: '/panel',
-    	component: Panel
-    },
-    {
     	path: '/',
-    	component: Index
+    	component: Main,
+    	children:[
+    		{
+    			path:'home',
+    			alias:'',
+    			component: Index
+    		},
+    		{
+    			path:'panel',
+    			component: Panel
+    		},
+    		{
+    	    	path: 'form-confirm',
+    	    	component: FormComfirm
+    	    },
+    	    {
+    	    	path: 'view-box',
+    	    	component: ViewBox
+    	    }
+    	]
     }
   ]
 })
